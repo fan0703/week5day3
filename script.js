@@ -46,7 +46,7 @@ for(i = 0; i < pastRaces.length; i++){
  pastRaces.appendChild(addli)
 }
   // Part 7
-document.querySelector()
+//document.querySelector()
 
   // Part 8
 
