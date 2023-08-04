@@ -32,14 +32,20 @@ for(i = 0; i < specialTitleArr.length; i++ ){
   specialTitleArr[i].style.fontSize = "2rem"
 }
   // Part 5 can not work 
-const pastRaces = document.querySelectorAll("#past-races")
-// pastRaces.classList.remove("Chicago")
-for(i = 0; i < pastRaces.length; i++){
-  if(pastRaces[i].textContent === "Chicago"){
-    pastRaces.remove("Chicago")
-  }
-}
-  // Part 6 not work, seems like didn't select the correct item
+// const cityArr = document.querySelector("#past-races li:nth-child(4)").remove();
+const cityArr = document.querySelectorAll(".city").classList.remove("chicago")
+// cityArr.slice(4)
+// console.log(cityArr)
+
+// cityArr.classList.remove("Chicago")
+// cityArr.includes("Chicago")
+
+// for(i = 0; i < pastRaces.length; i++){
+//   if(pastRaces[i].textContent === "Chicago"){
+//     pastRaces.remove("Chicago")
+//   }
+// }
+//   // Part 6 not work, seems like didn't select the correct item
   function createLi(){
  const addli = pastRaces.createElement("li")
  addli.textContent = "Boston"
