@@ -28,29 +28,27 @@ favoriteThings.removeChild(favoriteThings.lastElementChild)
  
   // Part 4
 const specialTitleArr = document.querySelectorAll(".special-title");
-for(i = 0; i < specialTitleArr.length; i++ ){
+for(let i = 0; i < specialTitleArr.length; i++ ){
   specialTitleArr[i].style.fontSize = "2rem"
 }
-  // Part 5 can not work 
-// const cityArr = document.querySelector("#past-races li:nth-child(4)").remove();
-const cityArr = document.querySelectorAll(".city").classList.remove("chicago")
-// cityArr.slice(4)
-// console.log(cityArr)
-
-// cityArr.classList.remove("Chicago")
-// cityArr.includes("Chicago")
-
-// for(i = 0; i < pastRaces.length; i++){
-//   if(pastRaces[i].textContent === "Chicago"){
-//     pastRaces.remove("Chicago")
-//   }
-// }
-//   // Part 6 not work, seems like didn't select the correct item
-  function createLi(){
- const addli = pastRaces.createElement("li")
- addli.textContent = "Boston"
- pastRaces.appendChild(addli)
+  // Part 5 
+// const pastRaces = document.querySelector("#past-races li:nth-child(4)")
+// pastRaces.remove()
+const prLi = document.querySelector("#past-races")
+const races = prLi.children
+for(let i = 0; i < races.length; i++){
+  if(races[i].textContent === 'Chicago'){
+    prLi.removeChild(races[i])
+  }
 }
+//   // Part 6 
+const pastRaces2 = document.querySelector("#past-races")
+ const li = document.createElement("li")
+ li.textContent = "Boston"
+pastRaces2.appendChild(li)
+
+})
+
   // Part 7
 //document.querySelector()
 
@@ -62,4 +60,4 @@ const cityArr = document.querySelectorAll(".city").classList.remove("chicago")
 
 
 
-});
+// });
