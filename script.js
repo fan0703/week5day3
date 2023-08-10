@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 document.querySelector('#main-title').textContent = "Hi! I am DOM Toretto. Welcome!"
 
   // Part 2
-document.querySelector('body').style.backgroundColor = "yellow"
+document.querySelector('body').style.backgroundColor = "beige"
   // Part 3 
 const favoriteThings = document.querySelector("#favorite-things")
 favoriteThings.removeChild(favoriteThings.lastElementChild)
@@ -47,11 +47,27 @@ const pastRaces2 = document.querySelector("#past-races")
  li.textContent = "Boston"
 pastRaces2.appendChild(li)
 
-})
+
 
   // Part 7
-//document.querySelector()
 
+// const blogPost = document.querySelectorAll(".blog-post")
+const newDiv = document.createElement("div")
+newDiv.classList.add('blog-post', "purple")
+const newH2 = document.createElement("h2")
+newH2.textContent = "Boston"
+newH2.style.color = "white"
+newH2.style.fontSize = "2rem"
+const newText = document.createElement("p")
+newText.textContent = "I drove car slowly in Boston"
+newDiv.appendChild(newH2)
+newDiv.appendChild(newText)
+const classMain = document.querySelector(".main")
+classMain.appendChild(newDiv)
+
+
+
+})
   // Part 8
 
 
