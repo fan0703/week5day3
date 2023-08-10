@@ -66,14 +66,19 @@ const classMain = document.querySelector(".main")
 classMain.appendChild(newDiv)
 
 
+  // Part 8 
+const quoteTitle = document.querySelector("#quote-title")
+document.addEventListener("click", randomQuote)
+  // Part 9
+const blogPost = document.querySelectorAll(".blog-post")
+blogPost.forEach((el) => {
+  el.addEventListener('click',function mouseout(){
+    el.classList.toggle('purple')
+  })
+  el.addEventListener('click', function mouseeenter(){
+    el.classList.toggle('red')
+  })
 
 })
-  // Part 8
 
-
-  // Part 9
-
-
-
-
-// });
+});
